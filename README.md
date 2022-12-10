@@ -4,6 +4,7 @@ Neural Networks and Deep Learning Models
 ## Enviroment/Resources
 * `Tensorflow v. 2.11`
 * `[Colaboratory](https://colab.research.google.com/)`
+* `[charity_data.csv](https://github.com/jbailey2705/Neural_Network_Charity_Analysis/files/10200323/charity_data.csv)`
 
 ## Overview
 1. Compare the differences of the traditional, regression, and neural machine learning models.
@@ -36,7 +37,7 @@ A foundation, Alphabet Soup, wants to predict where it should make investments. 
 ![Dev_3_Seq_Model](https://user-images.githubusercontent.com/109354592/206861040-82e494d1-097d-4c57-9978-628496ff9c8f.png)
 
 5. **Were you able to achieve the target model performance?**
-   The target for the model was 75%, but the best the model could produce was 72.7%.
+   The target for the model was 75%, however, the model accuracy is under 75%. This is not a satisfying performance to help predict the outcome of the        charity donations.
    
 6. **What steps did you take to try and increase model performance?**
    Columns were reviewed and the STATUS and SPECIAL_CONSIDERATIONS columns were dropped as well as increasing the number of neurons and layers. Other          activations were tried such as tanh, but the range that model produced went from 40% to 68% accuracy. The linear activation produced the worst accuracy,    around 28%. The relu activation at the early layers and sigmoid activation at the latter layers gave the best results.
@@ -45,7 +46,7 @@ A foundation, Alphabet Soup, wants to predict where it should make investments. 
 ![Deliverable_3](https://user-images.githubusercontent.com/109354592/206861155-e5357c76-7d14-48c6-89d7-fa43de3603f9.png)
 
 ## Summary:
-The `relu` and `sigmoid` activations yielded a `72.7%` accuracy, which is the best the model could produce using various number of neurons and layers. The next step should be to try the random forest classifier as it is less influenced by outliers.
+The `relu` and `sigmoid` activations yielded a `47.7%` accuracy, which is well below the target of `75%`
 
 
    
