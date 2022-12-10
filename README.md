@@ -35,10 +35,17 @@ A foundation, Alphabet Soup, wants to predict where it should make investments. 
 ![Dev3_Code_Model](https://user-images.githubusercontent.com/109354592/206861026-3b075711-3d35-43f6-be86-ad136070df68.png)
 ![Dev_3_Seq_Model](https://user-images.githubusercontent.com/109354592/206861040-82e494d1-097d-4c57-9978-628496ff9c8f.png)
 
+5. **Were you able to achieve the target model performance?**
+   The target for the model was 75%, but the best the model could produce was 72.7%.
+   
+6. **What steps did you take to try and increase model performance?**
+   Columns were reviewed and the STATUS and SPECIAL_CONSIDERATIONS columns were dropped as well as increasing the number of neurons and layers. Other          activations were tried such as tanh, but the range that model produced went from 40% to 68% accuracy. The linear activation produced the worst accuracy,    around 28%. The relu activation at the early layers and sigmoid activation at the latter layers gave the best results.
 
+![Deliverables_1_and_2](https://user-images.githubusercontent.com/109354592/206861151-448e34b8-569f-4fc7-982d-4ae3efc54152.png)
+![Deliverable_3](https://user-images.githubusercontent.com/109354592/206861155-e5357c76-7d14-48c6-89d7-fa43de3603f9.png)
 
-
-
+## Summary:
+The `relu` and `sigmoid` activations yielded a `72.7%` accuracy, which is the best the model could produce using various number of neurons and layers. The next step should be to try the random forest classifier as it is less influenced by outliers.
 
 
    
